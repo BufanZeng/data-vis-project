@@ -1,0 +1,8 @@
+.container-fluid {
+    max-width: 90%;
+}
+
+#cover {
+    width: 100%;
+    z-index: 0;
+}

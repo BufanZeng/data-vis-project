@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="navbar-brand mb-0 h1">Team Owl</div>
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#introduction">Introduction</a>
+      <a class="nav-item nav-link" href="#overview">Overview</a>
+      <a class="nav-item nav-link" href="#trend">Trend</a>
+      <a class="nav-item nav-link" href="#demographics">Demographics</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <img class="row mt-4" id="cover" src="https://www.wallpaperflare.com/static/978/619/636/highway-110-los-angeles-united-states-photography-wallpaper.jpg" alt="Cover">
+  <h2 class="row mt-4" id="introduction">Traffic Collision Visualization in Los Angeles County</h2>
+  <p>
+    Being one of the largest cities in the world, Los Angeles always has a considerable amount of traffic during the day despite the well-constructed road system.
+    <br>Our project is designed to explore the traffic collisions data of Los Angeles county.
+    <br>We visualized the dataset "Traffic Collision Data from 2010 to Present" from <a href="https://data.lacity.org/A-Safe-City/Traffic-Collision-Data-from-2010-to-Present/d5tf-ez2w">Los Angeles Open Data</a> with 3 perspectives:
+      <li><a href="#overview">Overview</a>: the overview of the collision amount for each year</li>
+      <li><a href="#trend">Trend</a>: the trend of the traffic collisions in daily basis</li>
+      <li><a href="#demographics">Demographics</a>: some demographic information about the victims involved in the accidents</li>
+  </p>
+
+  <h2 class="row mt-3" id="overview">Overview</h2>
+  <app-line-chart></app-line-chart>
+
+  <h2 class="row mt-3" id="trend">Trend</h2>
+  <app-choropleth-map></app-choropleth-map>
+  <hr>
+  <app-slopegraph></app-slopegraph>
+
+  <h2 class="row mt-3" id="demographics">Demographics</h2>
+  <app-age-chart></app-age-chart>
+  <hr>
+  <app-bubble-cloud></app-bubble-cloud>
+  <hr>
+  <app-alluvial-diagram></app-alluvial-diagram>
+</div>

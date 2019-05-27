@@ -1,0 +1,12 @@
+#chart6 {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#alluvial {
+    margin: 0 auto;
+    position: absolute;
+    left: 22%;
+}
